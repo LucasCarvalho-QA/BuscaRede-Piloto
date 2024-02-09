@@ -64,5 +64,5 @@ build-iPhoneSimulator/
 # ignore Gemfile.lock
 Gemfile.lock
 
-/features/logs
+/features/logs/
 /config/authentication.yml
