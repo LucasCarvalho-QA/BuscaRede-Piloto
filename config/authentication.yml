@@ -1,0 +1,7 @@
+hml:
+  usuario_valido:
+    user: '23658464836'
+    pass: 'Audi@2023'
+  usuario_invalido:
+    user_invalido: '020304050607'
+    pass_invalido: '@teste'

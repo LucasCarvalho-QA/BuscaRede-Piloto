@@ -1,0 +1,40 @@
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UseRubyVersion@0
+  inputs:
+    versionSpec: '>= 2.5'
+
+- script: |
+    sudo apt-get update
+    sudo apt-get install -y ruby-full google-chrome-stable
+    sudo gem install bundler
+    bundle install
+    sudo gem install selenium-webdriver
+    sudo gem install cucumber
+    sudo gem install httparty
+  displayName: 'Install dependencies'
+
+- script: |
+    bundle exec cucumber --format html --out=features/logs/features.html --format junit --out=features/logs/report.xml
+  displayName: 'Run tests'
+  continueOnError: true
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'features/logs/features.html'
+    artifactName: 'test-results'
+    publishLocation: 'pipeline'
+  displayName: 'Publish test results'
+  continueOnError: true
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'Cucumber Tests'
+    failTaskOnFailedTests: true
+    publishRunAttachments: true
+  condition: always()
+  displayName: 'Publish Test Results - JUnit'
+  continueOnError: true

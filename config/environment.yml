@@ -1,0 +1,4 @@
+hml:
+  server: 'https://buscarede.saudepetrobras.com.br/busca_rede'
+qa:
+  server: 'https://buscarede.saudepetrobras.com.br/busca_rede'
