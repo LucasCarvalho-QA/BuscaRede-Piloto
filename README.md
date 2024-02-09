@@ -5,7 +5,7 @@ Um tutorial sobre como configurar e executar um teste
 
 
 ## Configuração de Ambiente
-    1. Baixar o Ruby+Devkit 3.2.2-1 (x64) em: https://rubyinstaller.org/downloads/
+    1. Baixar o Ruby+Devkit 3.2.3-1 (x64) em: https://rubyinstaller.org/downloads/
     2. Após a instalação, execute o script abaixo no prompt de comando (cmd). Em caso de sucesso, a versão instalada será exibida
 ```bash
   ruby -v
