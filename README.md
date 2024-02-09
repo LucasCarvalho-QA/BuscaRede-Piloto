@@ -35,17 +35,17 @@ Um tutorial sobre como configurar e executar um teste
 
     Exemplo:
         Access token: 3ci6vwtj57tsb5zkfwsanxmbx3zgz3ahuaqe2jqhsgzs7ro52
-        URL git: https://ub-Institucional@dev.azure.com/ub-Institucional/SQUADS/_git/RNP
+        URL git: https://ub-Institucional@dev.azure.com/{Organization}/{Project}/_git/{repositorio}
 
 
-        https://<alterar_organização_para_Access_token>@dev.azure.com/ub-Institucional/SQUADS/_git/RNP
+        https://<alterar_organização_para_Access_token>@dev.azure.com/{Organization}/{Project}/_git/{repositorio}
 
-        https://3ci6vwtj57tsb5zkfwsanxmbx3zgz3ahuaqe2jqhsgzs7ro52@dev.azure.com/{Organization}/{Project}/_git/RNP
+        https://3ci6vwtj57tsb5zkfwsanxmbx3zgz3ahuaqe2jqhsgzs7ro52@dev.azure.com/{Organization}/{Project}/_git/{repositorio}
 
     
     4. Adicione o comando "git clone" e faça o clone do projeto para sua máquina (troque pela sua chave)
         
-        git clone https://3ci6vwtj57tsb5zkfwsanxmbx3zgz3ahuaqe2jqhsgzs7ro52@dev.azure.com/ub-Institucional/SQUADS/_git/RNP  
+        git clone https://3ci6vwtj57tsb5zkfwsanxmbx3zgz3ahuaqe2jqhsgzs7ro52@dev.azure.com/{Organization}/{Project}/_git/{repositorio}
 
     
     5. Acesse a pasta do seu projeto
